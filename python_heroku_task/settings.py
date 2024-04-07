@@ -80,7 +80,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'postgres',
-        'USER': environ.get('SUPABASE_USER'),
+        'USER': 'postgres',
         'PASSWORD': environ.get('SUPABASE_PASSWORD'),
         'HOST': environ.get('SUPABASE_HOST'),
         'PORT': '5432',
