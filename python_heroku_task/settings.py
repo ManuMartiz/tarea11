@@ -82,7 +82,7 @@ DATABASES = {
         'NAME': 'postgres',
         'USER': environ.get('SUPABASE_USER'),
         'PASSWORD': environ.get('SUPABASE_PASSWORD'),
-        'HOST': '127.0.0.1',
+        'HOST': environ.get('SUPABASE_HOST'),
         'PORT': '5432',
         'OPTIONS': {
             'sslmode': 'require',
