@@ -29,7 +29,7 @@ SECRET_KEY = environ.get('DJANGO_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app', '.now.sh', '5432']
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app', '.now.sh']
 
 # Application definition
 
@@ -82,7 +82,7 @@ DATABASES = {
         'NAME': 'postgres',
         'USER': environ.get('SUPABASE_USER'),
         'PASSWORD': environ.get('SUPABASE_PASSWORD'),
-        'HOST': environ.get('SUPABASE_HOST'),
+        'HOST': '127.0.0.1',
         'PORT': '5432',
         'OPTIONS': {
             'sslmode': 'require',
